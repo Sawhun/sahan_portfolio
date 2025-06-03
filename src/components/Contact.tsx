@@ -13,7 +13,7 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'sahanbhasima12@gmail.com', href: 'mailto:sahanbhasima12@gmail.com' },
-    { icon: Github, label: 'GitHub', value: 'github.com/sawhun', href: 'https://github.com/sahanbhasima' },
+    { icon: Github, label: 'GitHub', value: 'github.com/sawhun', href: 'https://github.com/sawhun' },
     { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/sahanbhasima', href: 'https://linkedin.com/in/sahanbhasima' },
   ];
 
