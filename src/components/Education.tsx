@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react';
 
@@ -14,7 +13,7 @@ const Education = () => {
     },
     {
       degree: '+2 Physics',
-      institution: 'Everest Secondary Higher School',
+      institution: 'Khwopa Secondary Higher School',
       period: 'Aug 2020 - Sep 2022',
       location: 'Bhaktapur',
       type: 'education',
