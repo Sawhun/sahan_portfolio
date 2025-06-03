@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Shield, Download, Mail, Github, Eye } from 'lucide-react';
+import { Shield, Terminal, Lock, Download, Mail } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -12,7 +12,7 @@ const Hero = () => {
       const timeout = setTimeout(() => {
         setDisplayText(prev => prev + fullText[currentIndex]);
         setCurrentIndex(prev => prev + 1);
-      }, 80);
+      }, 100);
       return () => clearTimeout(timeout);
     }
   }, [currentIndex, fullText]);
@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content side */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:order-1">
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 bg-cyber-electric/10 border border-cyber-electric/20 rounded-full px-4 py-2">
                 <Shield className="w-4 h-4 text-cyber-electric" />
@@ -66,7 +66,7 @@ const Hero = () => {
                 className="group bg-gradient-to-r from-cyber-electric to-cyber-blue hover:from-cyber-blue hover:to-cyber-electric text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-cyber-electric/30 hover:scale-105 transform"
               >
                 <span className="flex items-center justify-center gap-2">
-                  <Eye className="w-5 h-5" />
+                  <Terminal className="w-5 h-5" />
                   View My Work
                 </span>
               </button>
@@ -89,26 +89,26 @@ const Hero = () => {
                   <Mail className="w-5 h-5 text-cyber-electric" />
                 </div>
               </a>
-              <a href="#" className="group">
+              <a href="https://github.com/sahanbhasima" target="_blank" rel="noopener noreferrer" className="group">
                 <div className="w-12 h-12 bg-cyber-green/20 hover:bg-cyber-green/30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  <Github className="w-5 h-5 text-cyber-green" />
+                  <Terminal className="w-5 h-5 text-cyber-green" />
                 </div>
               </a>
             </div>
           </div>
 
           {/* Profile image side */}
-          <div className="relative">
+          <div className="relative lg:order-2">
             <div className="relative z-10">
               {/* Main profile container */}
               <div className="relative bg-gradient-to-br from-cyber-navy/60 to-cyber-dark/60 backdrop-blur-lg border border-cyber-electric/20 rounded-3xl p-8 shadow-2xl">
                 {/* Profile image */}
                 <div className="relative mb-6">
-                  <div className="w-64 h-64 mx-auto rounded-2xl overflow-hidden border-4 border-cyber-electric/30 shadow-lg shadow-cyber-electric/20">
+                  <div className="w-80 h-96 mx-auto rounded-2xl overflow-hidden border-4 border-cyber-electric/30 shadow-lg shadow-cyber-electric/20">
                     <img 
-                      src="/lovable-uploads/543e9ab6-0d70-45c7-abdc-e711e130d0ff.png" 
-                      alt="Sahan Bhasima" 
-                      className="w-full h-full object-cover"
+                      src="/lovable-uploads/17b5b95f-4aaf-43f8-ad79-41b8e83ea733.png" 
+                      alt="Sahan Bhasima - Cybersecurity Professional" 
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   {/* Floating status indicator */}
