@@ -89,7 +89,7 @@ const Hero = () => {
                   <Mail className="w-5 h-5 text-cyber-electric" />
                 </div>
               </a>
-              <a href="https://github.com/sahanbhasima" target="_blank" rel="noopener noreferrer" className="group">
+              <a href="https://github.com/Sawhun" target="_blank" rel="noopener noreferrer" className="group">
                 <div className="w-12 h-12 bg-cyber-green/20 hover:bg-cyber-green/30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                   <Terminal className="w-5 h-5 text-cyber-green" />
                 </div>
