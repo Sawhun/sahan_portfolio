@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Scan, Shield, Monitor, Github, Eye, ExternalLink, Code, Terminal } from 'lucide-react';
+import { Scan, Shield, Monitor, Code, Terminal } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -13,8 +12,6 @@ const Projects = () => {
       tech: ['Python', 'Socket Programming', 'Threading', 'Network Protocols'],
       icon: Scan,
       color: 'cyber-electric',
-      github: '#',
-      demo: '#',
       featured: true,
       status: 'Completed'
     },
@@ -27,8 +24,6 @@ const Projects = () => {
       tech: ['Python', 'Threat Intelligence', 'API Integration', 'Dashboard Design'],
       icon: Shield,
       color: 'cyber-green',
-      github: '#',
-      demo: '#',
       featured: true,
       status: 'In Progress'
     },
@@ -41,20 +36,10 @@ const Projects = () => {
       tech: ['Splunk', 'Data Visualization', 'Event Processing', 'Security Analytics'],
       icon: Monitor,
       color: 'cyber-purple',
-      github: '#',
-      demo: '#',
       featured: false,
       status: 'Completed'
     }
   ];
-
-  const handleProjectAction = (url: string, action: string) => {
-    if (url === '#') {
-      alert(`${action} functionality will be available soon. Please check back later or contact me for more information.`);
-    } else {
-      window.open(url, '_blank');
-    }
-  };
 
   return (
     <section className="py-24 bg-gradient-to-b from-cyber-navy/30 to-transparent">
@@ -140,24 +125,6 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-
-                    {/* Action buttons */}
-                    <div className="flex gap-4">
-                      <button 
-                        onClick={() => handleProjectAction(project.github, 'GitHub')}
-                        className="flex items-center gap-2 text-cyber-electric hover:text-white transition-colors hover:scale-105 transform"
-                      >
-                        <Github className="w-4 h-4" />
-                        <span className="text-sm font-medium">Source Code</span>
-                      </button>
-                      <button 
-                        onClick={() => handleProjectAction(project.demo, 'Demo')}
-                        className="flex items-center gap-2 text-cyber-green hover:text-white transition-colors hover:scale-105 transform"
-                      >
-                        <Eye className="w-4 h-4" />
-                        <span className="text-sm font-medium">Live Demo</span>
-                      </button>
-                    </div>
                   </div>
                 </div>
               );
@@ -201,23 +168,6 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-
-                <div className="flex gap-3">
-                  <button 
-                    onClick={() => handleProjectAction(project.github, 'GitHub')}
-                    className="flex items-center gap-1 text-cyber-electric hover:text-white transition-colors text-sm"
-                  >
-                    <Github className="w-3 h-3" />
-                    Code
-                  </button>
-                  <button 
-                    onClick={() => handleProjectAction(project.demo, 'Demo')}
-                    className="flex items-center gap-1 text-cyber-green hover:text-white transition-colors text-sm"
-                  >
-                    <Eye className="w-3 h-3" />
-                    Demo
-                  </button>
                 </div>
               </div>
             );
