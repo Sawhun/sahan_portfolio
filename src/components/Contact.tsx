@@ -11,7 +11,7 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'sahanbhasima12@gmail.com', href: 'mailto:sahanbhasima12@gmail.com' },
+    { icon: Mail, label: 'Email', value: 'sahanbhasima132@gmail.com', href: 'mailto:sahanbhasima132@gmail.com' },
     { icon: Github, label: 'GitHub', value: 'github.com/Sawhun', href: 'https://github.com/Sawhun' },
     { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/sahan-bhasima-04b0b3273', href: 'https://www.linkedin.com/in/sahan-bhasima-04b0b3273/' },
   ];

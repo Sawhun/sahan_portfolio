@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Terminal, Lock, Download, Mail } from 'lucide-react';
 
@@ -84,7 +83,7 @@ const Hero = () => {
 
             {/* Social links */}
             <div className="flex gap-4 pt-4">
-              <a href="mailto:sahanbhasima12@gmail.com" className="group">
+              <a href="mailto:sahanbhasima132@gmail.com" className="group">
                 <div className="w-12 h-12 bg-cyber-electric/20 hover:bg-cyber-electric/30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                   <Mail className="w-5 h-5 text-cyber-electric" />
                 </div>
