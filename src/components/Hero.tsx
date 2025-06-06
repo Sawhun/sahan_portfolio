@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Terminal, Lock, Download, Mail, Github, Linkedin } from 'lucide-react';
+import { Shield, Terminal, Lock } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -69,35 +69,6 @@ const Hero = () => {
                   View My Work
                 </span>
               </button>
-              
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="group border-2 border-cyber-green/50 hover:border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-cyber-dark font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 transform"
-              >
-                <span className="flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Get In Touch
-                </span>
-              </button>
-            </div>
-
-            {/* Social links */}
-            <div className="flex gap-4 pt-4">
-              <a href="mailto:sahanbhasima132@gmail.com" className="group">
-                <div className="w-12 h-12 bg-cyber-electric/20 hover:bg-cyber-electric/30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  <Mail className="w-5 h-5 text-cyber-electric" />
-                </div>
-              </a>
-              <a href="https://github.com/Sawhun" target="_blank" rel="noopener noreferrer" className="group">
-                <div className="w-12 h-12 bg-cyber-green/20 hover:bg-cyber-green/30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  <Github className="w-5 h-5 text-cyber-green" />
-                </div>
-              </a>
-              <a href="https://www.linkedin.com/in/sahan-bhasima-04b0b3273/" target="_blank" rel="noopener noreferrer" className="group">
-                <div className="w-12 h-12 bg-cyber-purple/20 hover:bg-cyber-purple/30 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  <Linkedin className="w-5 h-5 text-cyber-purple" />
-                </div>
-              </a>
             </div>
           </div>
 
